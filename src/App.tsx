@@ -1,6 +1,8 @@
 import { Button, TomatoButton } from './Element'
-import { Container } from './components/Container';
-import { Input, Label } from './components/Input';
+import FormRegister from './components/FormRegister';
+// import { Container } from './components/Container';
+// import StyledInput from './components/StyledInput';
+// import { SubmitInput } from './components/SubmitInput';
 
 function App() {
 
@@ -11,11 +13,7 @@ function App() {
       <TomatoButton>I'm red.</TomatoButton>
       <Button /* primary={false} */>Normal</Button>
       <Button primary={true}>Primary</Button>
-      <Container>
-        <Input id='name' type="text" placeholder="input style" />
-        <Label htmlFor='name'>Name</Label>
-        <Input type="text" placeholder="style" />
-      </Container>
+      <FormRegister/>
     </>
   );
 }

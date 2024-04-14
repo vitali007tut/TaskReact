@@ -18,5 +18,5 @@ export const Button = styled.button<{ primary?: boolean }>`
 
 export const TomatoButton = styled(Button)`
   background: tomato;
-  order-color: tomato;
+border-color: tomato;
 `
