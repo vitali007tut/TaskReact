@@ -1,19 +1,15 @@
-import { Button, TomatoButton } from './Element'
-import FormRegister from './components/FormRegister';
-// import { Container } from './components/Container';
-// import StyledInput from './components/StyledInput';
-// import { SubmitInput } from './components/SubmitInput';
+import { RouterProvider } from 'react-router-dom';
+import { router } from './components/AppRouter';
+import Header from './components/Header';
+import { GlobalStyle } from './GlobalStyle';
 
 function App() {
 
   return (
     <>
-      <Button>I'm purple.</Button>
-      <br />
-      <TomatoButton>I'm red.</TomatoButton>
-      <Button /* primary={false} */>Normal</Button>
-      <Button primary={true}>Primary</Button>
-      <FormRegister/>
+      <GlobalStyle />
+      <Header />
+      <RouterProvider router={router} />
     </>
   );
 }
