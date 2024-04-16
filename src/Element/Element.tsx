@@ -14,6 +14,10 @@ export const Button = styled.button<{ primary?: boolean }>`
     &:hover {
     opacity: 1;
   }
+
+  .active & {
+    background: #00ff00;
+  }
 `
 
 export const TomatoButton = styled(Button)`

@@ -1,14 +1,15 @@
+import { NavLink, Outlet } from "react-router-dom";
 import { Button, TomatoButton } from "../Element";
 
 function Header() {
 
     return (
         <>
-            <Button>I'm purple.</Button>
+            <NavLink to="/"><TomatoButton>I'm red to `/`</TomatoButton></NavLink>
             <br />
-            <TomatoButton>I'm red.</TomatoButton>
-            <Button /* primary={false} */>Normal</Button>
-            <Button primary={true}>Primary</Button>
+            <NavLink to="/register"><Button /* primary={false} */>Register Normal</Button></NavLink>
+            <NavLink to="/singin"><Button primary={true}>SingIn Primary</Button></NavLink>
+            <Outlet />
         </>
     );
 }
